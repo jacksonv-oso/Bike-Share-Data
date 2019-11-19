@@ -3,3 +3,8 @@ body {
      background: rgb(194,145,126);
 background: linear-gradient(90deg, rgba(194,145,126,1) 0%, rgba(122,124,129,1) 35%, rgba(0,220,255,1) 100%);
   }
+
+  h2 {
+    font-size: 4em;
+    margin: 0px;
+  }
