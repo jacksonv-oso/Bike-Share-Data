@@ -22,16 +22,8 @@ function greeter(name){
   alert("Welcome to " +name + " data visualization")
 }
 
-greeter("JOHN CENA!!!!!!!!")
+greeter("Vernon's")
 
-var person = {name:"Vernon", age: 932, car: {model: "Chevrolet", year: 2014}}
-console.log ("My name is " + person.name)
-console.log ("My age " + person.age)
-console.log ("My car model is " + person.car.model)
-
-if (person.age > 931){
-  alert("Yoda, you seek Yoda!")
-}
 
 var data = {"2016":[{"9":220},{"10":141},{"11":89},{"12":16}]}
 var year_list = data[2016]
@@ -49,7 +41,7 @@ let months2016 = []
 let months2017 = []
 let months2018 = []
 
-// $(updateGraph)
+ $(updateGraph)
 
 function updateView() {
   $.getJSON(BASE_URL + "/rides/count" , updateRideCount)
@@ -76,34 +68,31 @@ function perYear(data) {
 
 }
 
-// function updateRideCount(data) {
-//   numberOfRides = data.count
-//   $("h2#rideCount").html(numberOfRides)
-//   alert(numberOfRides);
-//   console.log(numberOfRides)
-// }
+function updateRideCount(data) {
+   numberOfRides = data.count
+  $("h2#rideCount").html(numberOfRides)
+  alert(numberOfRides);
+  console.log(numberOfRides)
+}
 
-
-
-// function updateGraph() {
-//   var ctx = document.getElementById('myChart').getContext('2d');
-// var chart = new Chart(ctx, {
-//     // The type of chart we want to create
-//     type: 'line',
+ function updateGraph() {
+   var ctx = document.getElementById('myChart').getContext('2d');
+ var chart = new Chart(ctx, {
+    // The type of chart we want to create
+     type: 'line',
 
 //     // The data for our dataset
-//     data: {
-//         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-//         datasets: [{
-//             label: 'My First dataset',
-//             backgroundColor: 'rgb(255, 99, 132)',
-//             borderColor: 'rgb(255, 99, 132)',
-//             data: [0, 10, 5, 2, 20, 30, 45]
-//         }]
-//     },
+     data: {
+         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+         datasets: [{
+             label: 'Zagster Dataset',
+             backgroundColor: '#da680f',
+              borderColor: 'black',
+             data: [0, 10, 5, 2, 20, 30, 45]
+         }]
+     },
 
 //     // Configuration options go here
-//     options: {}
-// });
-// }
-// //https://jacksonv-oso.github.io/Bike-Share-Data/
+     options: {}
+ });
+ }
