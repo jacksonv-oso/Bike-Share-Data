@@ -2,6 +2,7 @@ const BASE_URL = "https://zagster-service.herokuapp.com"
 
 $(greeter)
 
+$(updateView)
 add(2,3);
 
 function add(num1, num2){
@@ -75,10 +76,10 @@ function perHour(data2016) {
   my_data.push(data2016[23][710])
 
 }
+
 function updateRideCount(data) {
    numberOfRides = data.count
   $("h2#rideCount").html(numberOfRides)
-  alert(numberOfRides);
   console.log(numberOfRides)
 }
 
