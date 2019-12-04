@@ -1,6 +1,6 @@
 const BASE_URL = "https://zagster-service.herokuapp.com"
 
-$(greeter)
+
 
 $(updateView)
 add(2,3);
@@ -10,11 +10,7 @@ function add(num1, num2){
   console.log("The answer is: " + answer);
   return answer;
 }
-function greeter(name){
-  alert("Welcome to " +name + " data visualization")
-}
 
-greeter("Vernon's")
 
 
 var data = []
