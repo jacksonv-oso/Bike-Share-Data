@@ -25,8 +25,8 @@ function updateView() {
   ).then(updateChart);
 }
 
-function perHour(data) {
-  var data =
+function perHour(data2016) {
+  var data2016 = data[2016]
   console.log(data2016[0][429])
   my_data.push(data2016[0][429])
   console.log(data2016[1][231])
@@ -90,7 +90,7 @@ function updateRideCount(data) {
      data: {
          labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16','17', '18', '19', '20', '21', '22', '23'],
          datasets: [{
-             label: 'Zagster Dataset',
+             label: 'Number of Hours Per Ride',
              backgroundColor: '#da680f',
               borderColor: 'black',
              data: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
