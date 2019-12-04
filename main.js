@@ -97,6 +97,15 @@ function updateRideCount(data) {
          }]
      },
 
-     options: {}
+     options: {
+      scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }]
+    }
+
+     }
  });
  }
